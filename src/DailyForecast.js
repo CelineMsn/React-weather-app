@@ -5,29 +5,25 @@ export default function DailyForecast(props) {
   function formatForecastDay() {
     const date = new Date(props.forecastData.dt * 1000);
     const weekdays = [
+      "Sunday",
       "Monday",
       "Tuesday",
       "Wednesday",
       "Thursday",
       "Friday",
       "Saturday",
-      "Sunday",
     ];
     const forecastDay = weekdays[date.getDay()];
     return forecastDay;
   }
 
   function maxTemp() {
-    const maxTemperature = Math.round(
-      ((props.forecastData.temp.max - 32) * 5) / 9
-    );
+    const maxTemperature = Math.round(props.forecastData.temp.max);
     return `${maxTemperature}°`;
   }
 
   function minTemp() {
-    const minTemperature = Math.round(
-      ((props.forecastData.temp.min - 32) * 5) / 9
-    );
+    const minTemperature = Math.round(props.forecastData.temp.min);
     return `${minTemperature}°`;
   }
 
