@@ -1,0 +1,32 @@
+body {
+  background-color: #c8cde2;
+}
+.App .body {
+  background: linear-gradient(to bottom,  #c8cde2 0%, #f7f5ef 100%);
+  border-radius: 90px;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 30px;
+  text-align: center;
+}
+
+.App hr {
+  color:  #38598b;
+  height: 5px;
+  margin: 20px 0;
+}
+
+.app-wrapper {
+  background-color: #fff;
+  background-color: #38598b;
+  border-color: #c8cde2;
+  border-radius: 95px;
+  max-width: 46rem;
+  padding: 15px 15px;
+  box-shadow: 9px 9px 24px 6px #13223811;
+  max-width: 750px;
+  margin: 30px auto;
+}
+

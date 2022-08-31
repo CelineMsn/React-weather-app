@@ -1,0 +1,76 @@
+.city-name {
+  color: #000;
+  display: block;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.Weather {
+  text-align: center;
+  max-width: 800px;
+  padding: 25px;
+  border-radius: 85px;
+  color: #113f67;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search-wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+.search-bar {
+  border-radius: 10px;
+  padding: 5px 12px;
+  border-color: #637893;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  background-color: blue;
+}
+
+.search-button:hover {
+  background-color: #a2a8d3;
+  color: #fff;
+  border-color: #637893;
+}
+
+.search-button {
+  color: #e7eaf6;
+  padding: 5px 12px;
+  margin: 0 10px;
+  background-color: #38598b;
+  border-radius: 60px;
+  font-family: "Roboto", sans-serif;
+  border-color: #c8cde2;
+  transition: all ease-in-out 200ms;
+}
+
+.location-button:hover {
+  background-color: #a2a8d3;
+  color: #fff;
+  border-color: #637893;
+}
+
+.location-button {
+  color: #e7eaf6;
+  padding: 5px 12px;
+  margin: 0 10px;
+  background-color: #38598b;
+  border-radius: 60px;
+  font-family: "Roboto", sans-serif;
+  border-color: #c8cde2;
+  transition: all ease-in-out 200ms;
+}
+
+.search-input {
+  color: #38598b;
+  padding: 5px 12px;
+  margin: 0 10px;
+  background-color: #f5f4ee;
+  border-radius: 60px;
+  font-family: "Roboto", sans-serif;
+  border-color: #c8cde2;
+  transition: all ease-in-out 200ms;
+}

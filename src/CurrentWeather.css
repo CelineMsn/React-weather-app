@@ -1,0 +1,70 @@
+.CurrentWeather .current-temp-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  max-height: 120px;
+  
+}
+.current-temp {
+  color: #466492;
+  display: block;
+  font-size: 90px;
+  font-weight: 500;
+  margin: 0 auto;
+  position: relative;
+}
+
+.fahrenheit,
+.celsius {
+  border: none;
+  cursor: pointer;
+  left: 90px;
+  position: relative;
+  text-decoration: none;
+  top: -90px;
+  transition: all 150ms ease-in-out;
+  color: #466492;
+}
+
+.active-link {
+  color: #466492;;
+  font-size: 22px;
+  font-weight: 600;
+}
+.active-link:hover {
+  color: #000;
+  cursor: default;
+}
+.non-active-link {
+  color: #848282;
+  font-size: 18px;
+  font-weight: 300;
+}
+.non-active-link:hover {
+  color: #000;
+  font-size: 22px;
+}
+
+.CurrentWeather .current-weather-image {
+  display: flex;
+  justify-content: center;
+  max-width: 160px;
+  position: relative;
+  top: -30px;
+}
+
+.CurrentWeather ul {
+  font-size: 20px;
+  margin: 0 auto;
+  max-height: 140px;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+
+.CurrentWeather li {
+  display: block;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+}
+
