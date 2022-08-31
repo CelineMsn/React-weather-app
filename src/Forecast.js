@@ -20,7 +20,7 @@ export default function Forecast(props) {
   function getForecast() {
     const apiEndpoint = "https://api.openweathermap.org/data/2.5/onecall?";
     const apiKey = "6e2f14a60b2f5be57b160a6148235b2f";
-    const apiUrl = `${apiEndpoint}lat=${props.coordinates.lat}&lon=${props.coordinates.lon}&appid=${apiKey}&units=imperial`;
+    const apiUrl = `${apiEndpoint}lat=${props.coordinates.lat}&lon=${props.coordinates.lon}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(getResponse);
   }
   if (loaded) {

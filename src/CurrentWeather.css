@@ -1,6 +1,6 @@
 .CurrentWeather .current-temp-container {
   display: block;
-  margin: 0 auto;
+  margin: 15px auto 10px auto;
   max-width: 200px;
   max-height: 120px;
   
