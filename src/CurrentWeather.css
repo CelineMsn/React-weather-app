@@ -1,33 +1,30 @@
 .CurrentWeather .current-temp-container {
   margin: 20px auto 20px auto;
- 
 }
 .current-temp {
   color: #466492;
-  display: flex;
+  display: block;
   font-size: 90px;
   font-weight: 500;
   margin: 0 auto;
-justify-content: right;
-  margin-top: 20px
+  text-align: end;
+  margin-top: 20px;
 }
 
 .fahrenheit,
 .celsius {
-  border: none;
+  border: none; 
   cursor: pointer;
- justify-content: left;
-  position: relative;
   text-decoration: none;
   margin-top: 33px;
   transition: all 150ms ease-in-out;
   color: #466492;
-  display: flex;
-  justify-content: left;
+  display: block;
+  text-align: start;
 }
 
 .active-link {
-  color: #466492;;
+  color: #466492;
   font-size: 22px;
   font-weight: 600;
 }
@@ -46,8 +43,7 @@ justify-content: right;
 }
 
 .CurrentWeather .current-weather-image {
-  max-width: 160px;
-  position: relative;
+  max-height: 150px;
 }
 
 .CurrentWeather ul {
@@ -65,13 +61,20 @@ justify-content: right;
   text-align: center;
 }
 
-.current-weather-conditions{
-    color: #000;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.current-weather-conditions {
+  color: #e7eaf6;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 5px auto;
+  margin: 10px auto 10px auto;
+  background-color: #97A2C1;
+  max-width: 500px;
+  border-radius: 60px;
+  font-family: "Roboto", sans-serif;
+  border-color: #c8cde2;
+  transition: all ease-in-out 200ms;
 }
 
 @media (max-width: 576px) {

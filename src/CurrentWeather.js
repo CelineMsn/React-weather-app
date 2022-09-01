@@ -18,6 +18,11 @@ export default function CurrentTemp(props) {
   if (unit === "imperial") {
     return (
       <div className="CurrentWeather">
+        <div className="row">
+          <h3 className="current-weather-conditions">
+            {props.data.description}
+          </h3>
+        </div>
         <div className="row current-temp-container">
           <div className="col-6 temp-column">
             <img
@@ -52,11 +57,6 @@ export default function CurrentTemp(props) {
             </h5>
           </div>
         </div>
-        <div className="row">
-          <h3 className="current-weather-conditions">
-            {props.data.description}
-          </h3>
-        </div>
 
         <div className="row">
           <div className="col-4">
@@ -86,6 +86,11 @@ export default function CurrentTemp(props) {
   } else {
     return (
       <div className="CurrentWeather">
+        <div className="row">
+          <h3 className="current-weather-conditions">
+            {props.data.description}
+          </h3>
+        </div>
         <div className="row current-temp-container">
           <div className="col-6">
             <img
@@ -116,11 +121,6 @@ export default function CurrentTemp(props) {
             </h5>
           </div>
         </div>
-        <div className="row">
-          <h3 className="current-weather-conditions">
-            {props.data.description}
-          </h3>
-        </div>
 
         <div className="row">
           <div className="col-4 weather-left">
@@ -145,7 +145,9 @@ export default function CurrentTemp(props) {
             </ul>
           </div>
         </div>
-      </div>
+        
+        </div>
+     
     );
   }
 }

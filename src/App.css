@@ -13,9 +13,12 @@ body {
 }
 
 .App hr {
-  color: #38598b;
   height: 5px;
   margin: 10px 0;
+  padding: 5px auto;
+  background-color: #04204a;
+  border-radius: 60px;
+ 
 }
 
 .app-wrapper {
