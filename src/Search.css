@@ -77,15 +77,15 @@
 }
 
 @media (max-width: 800px) {
- h1 {
-    font-size: 45px;
+ .city-name {
+    font-size: 60px;
   }
 }
 
 
 @media (max-width: 576px) {
- h1 {
+ .city-name {
     text-align: center;
-    font-size: 30px;
+    font-size: 60px;
   }
 }
