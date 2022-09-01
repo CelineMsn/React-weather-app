@@ -2,7 +2,7 @@ body {
   background-color: #c8cde2;
 }
 .App .body {
-  background: linear-gradient(to bottom,  #c8cde2 0%, #f7f5ef 100%);
+  background: linear-gradient(to bottom, #c8cde2 0%, #f7f5ef 100%);
   border-radius: 90px;
   display: block;
   font-family: "Poppins", sans-serif;
@@ -13,7 +13,7 @@ body {
 }
 
 .App hr {
-  color:  #38598b;
+  color: #38598b;
   height: 5px;
   margin: 10px 0;
 }
@@ -30,3 +30,17 @@ body {
   margin: 30px auto;
 }
 
+
+@media (max-width: 800px) {
+   h1 {
+    font-size: 45px;
+  }
+}
+
+
+@media (max-width: 576px) {
+h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+}

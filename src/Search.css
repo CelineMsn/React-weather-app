@@ -1,10 +1,11 @@
 .city-name {
   color: #000;
-  display: block;
+  max-width: 800px;
   font-size: 80px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
+  display: block;
 }
 
 .Weather {
@@ -68,9 +69,23 @@
   color: #38598b;
   padding: 5px 12px;
   margin: 0 10px;
-  background-color: #f5f4ee;
+  background-color: #e9e9eb;
   border-radius: 60px;
   font-family: "Roboto", sans-serif;
   border-color: #c8cde2;
   transition: all ease-in-out 200ms;
+}
+
+@media (max-width: 800px) {
+ h1 {
+    font-size: 45px;
+  }
+}
+
+
+@media (max-width: 576px) {
+ h1 {
+    text-align: center;
+    font-size: 30px;
+  }
 }
