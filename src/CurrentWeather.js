@@ -23,21 +23,21 @@ export default function CurrentTemp(props) {
             {props.data.description}
           </h3>
         </div>
-        <div className="row current-temp-container">
-          <div className="col-6 temp-column">
+        <div className="flex">
+          <div className="flex-right me-4">
             <img
               src={`./images/${props.data.icon}.png`}
               alt={props.data.description}
               className="current-weather-image"
             />
           </div>
-          <div className="col-3 temp-column">
-            <h5 className="current-temp">
+          <div className="flex-right">
+            <h5 className="temp-column current-temp">
               {Math.round(props.data.temperature)}
             </h5>
           </div>
-          <div className="col-3 units-column">
-            <h5>
+          <div className="flex-left">
+            <h5 className="units-column">
               <a
                 href="/"
                 className="fahrenheit active-link"
