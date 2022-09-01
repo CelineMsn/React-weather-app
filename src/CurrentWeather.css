@@ -1,29 +1,29 @@
 .CurrentWeather .current-temp-container {
-  display: block;
-  margin: 15px auto 10px auto;
-  max-width: 200px;
-  max-height: 120px;
-  
+  margin: 20px auto 20px auto;
+ 
 }
 .current-temp {
   color: #466492;
-  display: block;
+  display: flex;
   font-size: 90px;
   font-weight: 500;
   margin: 0 auto;
-  position: relative;
+justify-content: right;
+  margin-top: 20px
 }
 
 .fahrenheit,
 .celsius {
   border: none;
   cursor: pointer;
-  left: 90px;
+ justify-content: left;
   position: relative;
   text-decoration: none;
-  top: -90px;
+  margin-top: 33px;
   transition: all 150ms ease-in-out;
   color: #466492;
+  display: flex;
+  justify-content: left;
 }
 
 .active-link {
@@ -46,11 +46,8 @@
 }
 
 .CurrentWeather .current-weather-image {
-  display: flex;
-  justify-content: center;
   max-width: 160px;
   position: relative;
-  top: -30px;
 }
 
 .CurrentWeather ul {
@@ -66,6 +63,15 @@
   font-weight: 300;
   margin: 0 auto;
   text-align: center;
+}
+
+.current-weather-conditions{
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 576px) {

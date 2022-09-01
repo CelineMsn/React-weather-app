@@ -20,11 +20,18 @@ export default function CurrentTemp(props) {
       <div className="CurrentWeather">
         <div className="row current-temp-container">
           <div className="col-6 temp-column">
+            <img
+              src={`./images/${props.data.icon}.png`}
+              alt={props.data.description}
+              className="current-weather-image"
+            />
+          </div>
+          <div className="col-3 temp-column">
             <h5 className="current-temp">
               {Math.round(props.data.temperature)}
             </h5>
           </div>
-          <div className="col-4 units-column">
+          <div className="col-3 units-column">
             <h5>
               <a
                 href="/"
@@ -46,28 +53,28 @@ export default function CurrentTemp(props) {
           </div>
         </div>
         <div className="row">
+          <h3 className="current-weather-conditions">
+            {props.data.description}
+          </h3>
+        </div>
+
+        <div className="row">
           <div className="col-4">
             <ul>
-              <li className="current-weather-conditions text-capitalize">
-                {props.data.description}
-              </li>
               <li className="feels-like-temp text-capitalize">
                 feels like: {Math.round(props.data.feelsLike)}℉
               </li>
             </ul>
           </div>
           <div className="col-4">
-            <img
-              src={`./images/${props.data.icon}.png`}
-              alt={props.data.description}
-              className="current-weather-image"
-            />
-          </div>
-          <div className="col-4">
             <ul>
               <li className="humidity text-capitalize">
                 humidity: {props.data.humidity}%
               </li>
+            </ul>
+          </div>
+          <div className="col-4">
+            <ul>
               <li className="wind text-capitalize">
                 wind: {Math.round(props.data.wind)} mph
               </li>
@@ -80,12 +87,19 @@ export default function CurrentTemp(props) {
     return (
       <div className="CurrentWeather">
         <div className="row current-temp-container">
-          <div className="col-6 temp-column">
+          <div className="col-6">
+            <img
+              src={`./images/${props.data.icon}.png`}
+              alt={props.data.description}
+              className="current-weather-image"
+            />
+          </div>
+          <div className="col-3 temp-column">
             <h5 className="current-temp">
               {Math.round(((props.data.temperature - 32) * 5) / 9)}
             </h5>
           </div>
-          <div className="col-6 units-column">
+          <div className="col-3 units-column">
             <h5>
               <a
                 href="/"
@@ -103,30 +117,28 @@ export default function CurrentTemp(props) {
           </div>
         </div>
         <div className="row">
+          <h3 className="current-weather-conditions">
+            {props.data.description}
+          </h3>
+        </div>
+
+        <div className="row">
           <div className="col-4 weather-left">
             <ul>
-              <li className="current-weather-conditions text-capitalize">
-                {props.data.description}
-              </li>
               <li className="feels-like-temp text-capitalize">
                 feels like: {Math.round(((props.data.feelsLike - 32) * 5) / 9)}℃
               </li>
             </ul>
           </div>
-
-          <div className="col-4">
-            <img
-              src={`./images/${props.data.icon}.png`}
-              alt={props.data.description}
-              className="current-weather-image"
-            />
-          </div>
-
           <div className="col-4">
             <ul>
               <li className="humidity text-capitalize">
                 humidity: {props.data.humidity}%
               </li>
+            </ul>
+          </div>
+          <div className="col-4">
+            <ul>
               <li className="wind text-capitalize">
                 wind: {Math.round(props.data.wind * 1.609344)} km/h
               </li>
